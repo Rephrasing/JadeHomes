@@ -1,0 +1,99 @@
+[00:39:59] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[00:39:59] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[00:40:00] [Worker-Main-3/INFO]: Loaded 7 recipes
+[00:40:01] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[00:40:01] [Server thread/INFO]: Loading properties
+[00:40:01] [Server thread/INFO]: This server is running Paper version git-Paper-312 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: ce059b4)
+[00:40:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:40:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:40:01] [Server thread/INFO]: Default game type: SURVIVAL
+[00:40:01] [Server thread/INFO]: Generating keypair
+[00:40:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:40:01] [Server thread/INFO]: Using default channel type
+[00:40:01] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[00:40:01] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[00:40:02] [Server thread/INFO]: [GalaxyAPI] Loading GalaxyAPI v0.0.1
+[00:40:02] [Server thread/INFO]: [JadeHomes] Loading JadeHomes v0.0.1
+[00:40:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:40:02] [Server thread/INFO]: Preparing level "world"
+[00:40:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:40:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[00:40:09] [Server thread/INFO]: Time elapsed: 386 ms
+[00:40:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[00:40:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[00:40:09] [Server thread/INFO]: Time elapsed: 555 ms
+[00:40:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[00:40:09] [Server thread/INFO]: Time elapsed: 373 ms
+[00:40:09] [Server thread/INFO]: [GalaxyAPI] Enabling GalaxyAPI v0.0.1
+[00:40:10] [Server thread/INFO]: [GalaxyAPI] value of database-uri in config.yml cannot be null
+[00:40:10] [Server thread/INFO]: [GalaxyAPI] database-uri in config.yml is null or empty. Please configure it and restart the plugin.
+[00:40:10] [Server thread/ERROR]: Error occurred while enabling GalaxyAPI v0.0.1 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "com.github.rephrasing.galaxy.api.database.MongoHolder.connect()" because "this.mongoHolder" is null
+	at com.github.rephrasing.galaxy.GalaxyAPI.onEnable(GalaxyAPI.java:25) ~[GalaxyAPI-0.0.9-all.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:541) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugin(CraftServer.java:560) ~[paper-1.18.2.jar:git-Paper-312]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugins(CraftServer.java:474) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:664) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:316) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315) ~[paper-1.18.2.jar:git-Paper-312]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[00:40:10] [Server thread/INFO]: [GalaxyAPI] Disabling GalaxyAPI v0.0.1
+[00:40:10] [Server thread/INFO]: [GalaxyAPI] Terminated StarDust (MongoDB holder)
+[00:40:10] [Server thread/INFO]: [GalaxyAPI] Disabled GalaxyAPI
+[00:40:10] [Server thread/INFO]: [JadeHomes] Enabling JadeHomes v0.0.1
+[00:40:10] [Server thread/ERROR]: Error occurred while enabling JadeHomes v0.0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/github/rephrasing/galaxy/GalaxyAPI
+	at com.github.rephrasing.jadehomes.JadeHomesPlugin.onEnable(JadeHomesPlugin.java:20) ~[JadeHomes-v0.0.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:541) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugin(CraftServer.java:560) ~[paper-1.18.2.jar:git-Paper-312]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugins(CraftServer.java:474) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:664) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:316) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315) ~[paper-1.18.2.jar:git-Paper-312]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: com.github.rephrasing.galaxy.GalaxyAPI
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:151) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	... 12 more
+[00:40:10] [Server thread/INFO]: [JadeHomes] Disabling JadeHomes v0.0.1
+[00:40:10] [Server thread/ERROR]: Error occurred while disabling JadeHomes v0.0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/github/rephrasing/galaxy/api/database/AbstractGalaxyDatabase
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1012) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:197) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at com.github.rephrasing.jadehomes.JadeHomesPlugin.onDisable(JadeHomesPlugin.java:33) ~[JadeHomes-v0.0.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:399) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:578) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:374) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:541) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugin(CraftServer.java:560) ~[paper-1.18.2.jar:git-Paper-312]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugins(CraftServer.java:474) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:664) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:316) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.18.2.jar:git-Paper-312]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315) ~[paper-1.18.2.jar:git-Paper-312]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: com.github.rephrasing.galaxy.api.database.AbstractGalaxyDatabase
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:151) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	... 22 more
+[00:40:10] [Server thread/INFO]: Running delayed init tasks
+[00:40:10] [Server thread/INFO]: Done (8.530s)! For help, type "help"
+[00:40:10] [Server thread/INFO]: Timings Reset

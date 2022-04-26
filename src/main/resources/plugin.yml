@@ -1,0 +1,7 @@
+name: JadeHomes
+main: com.github.rephrasing.jadehomes.JadeHomesPlugin
+version: 0.0.1
+api-version: 1.18
+author: Rephrasing
+depend:
+  - Stardust

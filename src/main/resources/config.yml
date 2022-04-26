@@ -1,0 +1,8 @@
+max-homes-per-player: 2
+teleport-through-dimensions: true
+# cooldowns are set in seconds
+cooldowns:
+  jsethome: 5
+  jhome: 5
+  jdeletehome: 5
+  jrenamehome: 5
